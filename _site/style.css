@@ -1,0 +1,77 @@
+body {
+	background-color:#e4dacf;
+}
+h1 {
+	text-align:center;
+	font-family:'Josefine Sans';
+	font-size:100px;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	margin-top:0px;
+	animation-name:rainbow;
+	animation-duration:10s;
+	animation-iteration-count: infinite;
+}
+@keyframes rainbow {
+    from {
+        color: rgb(255, 0, 0);
+    }
+    16.6% {
+        color: rgb(255, 0, 255);
+    }
+    33.3% {
+        color: rgb(0, 0, 255);
+    }
+    50% {
+        color: rgb(0, 255, 255);
+    }
+    66.6% {
+        color: rgb(0, 255, 0);
+    }
+    83.3% {
+        color: rgb(255, 255, 0);
+    }
+    to {
+        color: rgb(255, 0, 0);
+    }
+}
+.card {
+  display:inline-block;
+  font-size:17px;
+  width:300px;
+  height:250px;
+  background-color:white;
+  color:white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all .2s ease-in-out; 
+  border-radius:15px;
+  color:black;
+  margin:10px;
+  position:relative;
+  left:5%;
+}
+.card:hover {
+	transform:scale(1.1);
+}
+.flex-container {
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+img {
+	border-radius:15px;
+}
+.text {
+	opacity:0;
+	margin:0px;
+	position:relative;
+	left:50%;
+	bottom:50%;
+  	transform: translate(-50%, -50%);
+  	text-align:center;
+}
+.card:hover img {
+	opacity:0.2;
+}
+.card:hover .text {
+	opacity:1;
+}
