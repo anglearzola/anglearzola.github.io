@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+        <button id="backToStart" onclick="test()"><</button>
+    <div id="gameWrap" class="clearfix">
+        <h1 id="mainHeading">Mortal Rock Paper Scissors Kombat 12</h1>
+        <h2 id="msgHeading">Who will be the winner?</h2>
+        <div id="userWrap">
+            <label for="userInput" id="userInputLbl">Enter Your Choice</label>
+            <span id="userInput"></span>
+        </div>
+        <div id="cpuWrap">
+            <label for="cpuResult" id="cpuResultLbl">The Robot Chooses</label>
+            <span id="cpuResult"></span>
+        </div>
+        <button id="goBtn">GO!</button>
+    </div>
+    <img src="/RPS/rock.png" class="rpsicon" onclick="rockIcon()">
+    <img src="/RPS/paper.jpg" class="rpsicon" onclick="paperIcon()">
+    <img src="/RPS/scissors.jpg" class="rpsicon" onclick="scissorsIcon()">
+    <p class="paragraph" style="color:red">Choose your fighter</p>
+    <p id="wins" style="color:red">Wins:</p>
+    <p id="losses" style="color:red">Loses:</p>
+    <script src="script.js"></script>
+  </body>
+</html>

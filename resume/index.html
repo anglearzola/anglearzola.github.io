@@ -3,20 +3,43 @@
 <head>
 	<title>Resume</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="description" content="My resume.">
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+	<meta name="author" content="Angel Arrazola">
 	<link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/png" href="/assets/favicon.png">
 </head>
 <body>
 	<!-- Heading with code background and name -->
-	<div id="headingDiv">
+	<section id="headingDiv">
 		<img id="logo" src="/assets/logo.png">
-	</div>
+	</section>
 	<!-- Experience div with more divs - Jobs cards + Experience cards and the heading -->
-	<div id="expDiv" class="section">
+	<section id="expDiv">
 		<h2 id="expHeading">Experience and Skills</h2>
-		<!-- Div is its own thing to be able to move it close to center of page and above the bottom div -->
-		<div id="jobsAndSkillsDiv">
-			<!-- Job cards -->
-			<div id="jobCards">
+			<!-- Wrapper for ACN badges -->
+				<div id="badgeWrapper">
+					<p style="color:black;position:absolute;bottom:75%;left:25%;font-size:30px;"><strong>Advanced Course Network Badges</strong></p>
+					<a href="https://www.forallrubrics.com/checklist/viewPublicResult/790e01f7-a7cb-45b9-94ac-aa0e5ea0439e" target="_blank">
+						<img src="/assets/communication.png" class="badge">
+					</a>
+					<a href="https://www.forallrubrics.com/checklist/viewPublicResult/5ade2656-e638-40c2-8e7d-ce2a689acbc7" target="_blank">
+						<img src="/assets/criticalthinking.png" class="badge">
+					</a>
+					<a href="https://www.forallrubrics.com/checklist/viewPublicResult/819ec367-2fbc-4f89-a736-e68652721ebe" target="_blank">
+						<img src="/assets/perseverance.png" class="badge">
+					</a>
+					<a href="https://www.forallrubrics.com/checklist/viewPublicResult/dde28014-d864-49a1-a958-f067e9cd03bb" target="_blank">
+						<img src="/assets/engagement.png" class="badge">
+					</a>
+					<a href="https://www.forallrubrics.com/checklist/viewPublicResult/b79e08f0-9a43-4114-a000-27da6f66ce51" target="_blank">
+						<img src="/assets/teamwork.png" class="badge">
+					</a>
+					<br>
+				</div>
+				<!-- Div is its own thing to be able to move it close to center of page and above the bottom div -->
+			<div id="jobsAndSkillsDiv">
 				<div class="jobGallery">
 					<div id="leftArrowDiv1" class="arrowDiv">
           				<p class="arrow">&lt;</p>
@@ -65,32 +88,11 @@
          			<p class="arrow">&gt;</p>
        			</div>
 			</div>
-
-			<!-- Skill cards -->
-			<div id="skillCards">
-				<div id="badgeWrapper">
-					<p style="color:black;position:absolute;bottom:75%;left:32%;font-size:19px;"><strong>Advanced Course Network Badges</strong></p>
-					<a href="https://www.forallrubrics.com/checklist/viewPublicResult/790e01f7-a7cb-45b9-94ac-aa0e5ea0439e" target="_blank">
-						<img src="/assets/communication.png" class="badge">
-					</a>
-					<a href="https://www.forallrubrics.com/checklist/viewPublicResult/5ade2656-e638-40c2-8e7d-ce2a689acbc7" target="_blank">
-						<img src="/assets/criticalthinking.png" class="badge">
-					</a>
-					<a href="https://www.forallrubrics.com/checklist/viewPublicResult/819ec367-2fbc-4f89-a736-e68652721ebe" target="_blank">
-						<img src="/assets/perseverance.png" class="badge">
-					</a>
-					<a href="https://www.forallrubrics.com/checklist/viewPublicResult/dde28014-d864-49a1-a958-f067e9cd03bb" target="_blank">
-						<img src="/assets/engagement.png" class="badge">
-					</a>
-					<a href="https://www.forallrubrics.com/checklist/viewPublicResult/b79e08f0-9a43-4114-a000-27da6f66ce51" target="_blank">
-						<img src="/assets/teamwork.png" class="badge">
-					</a>
-					<br>
-				</div>
+<!-- Sort through skill cards -->
 				<div class="skillGallery">
 				    <div id="leftArrowDiv2" class="arrowDiv">
-          				<p class="arrow">&lt;</p>
-        			</div>
+          			<p class="arrow">&lt;</p>
+        		</div>
 					<div class="card2" style="overflow-y:auto;">
 						<header class="top skills">HTML</header>
 						1 year of experience
@@ -126,16 +128,15 @@
 						<header class="top skills">Typing</header>
 						I type 100+ WPM
 					</div>
-				    <div id="rightArrowDiv2" class="arrowDiv">
-          			<p class="arrow">&gt;</p>
-        			</div>
+			    <div id="rightArrowDiv2" class="arrowDiv">
+        		<p class="arrow">&gt;</p>
+      		</div>
 				</div>
 			</div>
-			</div>
-		</div>
-	</div>
+	</section>
 
-	<div id="eduDiv" class="section">
+<!-- Education section -->
+	<section id="eduDiv" class="section">
 		<h2>Education</h2>
 		<div class="columnflex">
 			<div class="notSkillCards">
@@ -155,9 +156,10 @@
 				<p>AP Euro - 5</p>
 			</div>
 		</div>
-	</div>
+	</section>
 
-	<div id="clubDiv" class="section">
+<!-- Club section -->
+	<section id="clubDiv">
 		<h2>Clubs</h2>
 		<div class="columnflexButtons">
 			<button onclick="chessButton()">Chess Club</button>
@@ -171,9 +173,10 @@
 			<p id="yearsDone" style="font-size:40px;margin:0px;">Years Done:</p>
 			<p id="description" style="font-size:40px;margin:0px;">Description:</p>
 		</div>
-	</div>
+	</section>
 
-	<div id="activitiesDiv" class="section">
+<!-- Activities section -->
+	<section id="activitiesDiv">
 		<h2>Activities, Sports, and Interests</h2>
 		<div class="columnflex">
 			<div class="notSkillCards">
@@ -191,9 +194,10 @@
 				<p>Soccer (not competitively)</p>
 			</div>
 		</div>
-	</div>
+	</section>
 
-	<div id="awardsDiv" class="section">
+<!-- Awards section -->
+	<section id="awardsDiv">
 		<h2>Awards and Achievements</h2>
 		<div class="columnflex">
 			<div class="notSkillCards">
@@ -205,7 +209,9 @@
 				<p>Created website for resume</p>
 			</div>
 		</div>
-	</div>
+	</section>
+
+	<!-- Footer -->
 <footer><address>Angel Arrazola - (401)-481-4046 - angelvarrazola2003@outlook.com</address></footer>
 <script src="script.js"></script>
 </body>
