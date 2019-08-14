@@ -139,7 +139,7 @@ hr {
 }
 /*Styling for headingDiv */
 #headingDiv {
-	background-image:url('code.jpg');
+	background-image:url('/assets/code.jpg');
 	color:white;
 	height:750px;
 	background-size:cover;
@@ -149,7 +149,7 @@ hr {
 #expDiv {
 	display:flex;
 	flex-direction:row;
-	background-image:url('abstract.jpg');
+	background-image:url('/assets/abstract.jpg');
 }
 #expHeading {
 	position:absolute;
@@ -180,13 +180,13 @@ hr {
 }
 /* Education stuff */
 #eduDiv {
-	background-image:url('graduation.jpg');
+	background-image:url('/assets/graduation.jpg');
 	background-size:100%;
 }
 
 /* Club stuff */
 #clubDiv {
-	background-image:url('abstract2.jpg');
+	background-image:url('/assets/abstract2.jpg');
 	background-size:cover;
 }
 #clubInfo {
@@ -198,12 +198,12 @@ hr {
 }
 /* Activities stuff */
 #activitiesDiv {
-	background-image:url('track.jpg');
+	background-image:url('/assets/track.jpg');
 	background-size:100%;
 }
 /* Awards stuff */
 #awardsDiv {
-	background-image:url('award.jpg');
+	background-image:url('/assets/award.jpg');
 	background-size:cover;
 
 }
@@ -234,4 +234,4 @@ footer {
 #leftArrowDiv2, #rightArrowDiv2 {
 	left:31.5%;
 	bottom:5px;
-}  
+}
