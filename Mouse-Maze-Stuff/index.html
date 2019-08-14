@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+  <!-- Circle appears when in "buffer" to make sure mouse is where I need it to be -->
+    <img src='/Mouse-Maze-Stuff/assets/circle.png' id="circle">
+  <!-- Boundaries div is to contain the 2 main boundaries used in levels 1,2, and 4 -->
+    <div id="boundaries">
+      <div class="boundary" id="boundary1"></div>
+      <div id="boundary2" class="boundary"></div>
+    </div>
+  <!-- Level 1 div has the stairs that leads to next level -->
+    <div id="level1">
+      <img src="/Mouse-Maze-Stuff/assets/stairs.png" id="stairs1" class='stairs'>
+    </div>
+  <!-- Level 2 div has the stairs that leads to the next level and a 3rd boundary that player has to get past -->
+    <div id="level2">
+      <div id="boundary3" class="boundary"></div>
+      <img src="/Mouse-Maze-Stuff/assets/stairs.png" id="stairs2" class='stairs'>
+    </div>
+  <!-- Level 3 div has the stairs that leads to next level, a key that unlocks the stairs, and additional boundaries to make things interesting -->
+    <div id="level3">
+      <img src="/Mouse-Maze-Stuff/assets/stairs.png" id="stairs3">
+      <img src='/Mouse-Maze-Stuff/assets/key.png' id="key">
+      <div id="boundary4" class="boundary"></div>
+      <img src="/Mouse-Maze-Stuff/assets/lock.png" id="lock">
+    </div>
+  <!-- Level 4 div has the stairs that leads to next level, and... -->
+    <div id="level4">
+      <img src="/Mouse-Maze-Stuff/assets/stairs.PNG" id="stairs4" class='stairs'>
+      <img src="/Mouse-Maze-Stuff/assets/goomba.png" id="goomba1" class="goomba">
+      <img src="/Mouse-Maze-Stuff/assets/goomba.png" id="goomba2" class="goomba">
+      <img src="/Mouse-Maze-Stuff/assets/goomba.png" id="goomba3" class="goomba">
+      <img src="/Mouse-Maze-Stuff/assets/goomba.png" id="goomba4" class="goomba">
+      <img src="/Mouse-Maze-Stuff/assets/goomba.png" id="goomba5" class="goomba specialGoomba">
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

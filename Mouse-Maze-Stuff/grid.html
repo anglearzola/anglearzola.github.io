@@ -1,0 +1,39 @@
+<!-- <html>
+  <body>
+    <div id="grid">
+
+    </div>
+    <style>
+      #grid {
+        display:grid;
+        grid-template-columns: repeat(5, 1fr);
+        width:80vmin;
+      }
+      #grid>div {
+        width:10px;
+        height:10px;
+        background-color:red;
+      }
+    </style>
+    <script>
+      /* 0 = empty space
+        1 = wall 
+        2 = stairs */
+
+      let level = [
+        0, 1, 1, 1, 0,
+        0, 1, 1, 1, 0,
+        0, 0, 0, 0, 2,
+        0, 1, 1, 1, 0,
+        0, 1, 1, 1, 0,
+      ]
+      let grid = document.getElementById("grid");
+      let fragment = document.createDocumentFragment();
+      (new Array(25)).forEach((val)=>{
+        console.log(val)
+        fragment.appendChild(document.createElement("div"));
+      });
+      grid.appendChild(fragment);
+    </script>
+  </body>
+</html> -->

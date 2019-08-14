@@ -1,6 +1,10 @@
 body {
 	background-color:#e4dacf;
 }
+a {
+	margin:0px;
+	padding:0px;
+}
 h1 {
 	text-align:center;
 	font-family:'Josefine Sans';
@@ -35,39 +39,49 @@ h1 {
     }
 }
 .card {
-  display:inline-block;
+  display:block;
   font-size:17px;
-  width:300px;
   height:250px;
   background-color:white;
   color:white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: all .2s ease-in-out; 
+  transition: all .2s ease-in-out;
   border-radius:15px;
   color:black;
-  margin:10px;
-  position:relative;
-  left:5%;
+	overflow: hidden;
+  /* margin:10px; */
+  /* position:relative; */
+  /* left:5%; */
 }
 .card:hover {
 	transform:scale(1.1);
 }
 .flex-container {
-	display:flex;
+	/* display:flex;
 	flex-direction:row;
-	flex-wrap:wrap;
+	flex-wrap:wrap; */
+	margin: 0 auto;
+	display: grid;
+	/* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+	grid-template-columns: repeat(auto-fill, 300px);
+	grid-gap:20px;
 }
 img {
 	border-radius:15px;
+	width: 100%;
 }
 .text {
 	opacity:0;
 	margin:0px;
 	position:relative;
+	height: 100%;
 	left:50%;
 	bottom:50%;
-  	transform: translate(-50%, -50%);
-  	text-align:center;
+	transform: translate(-50%, -50%);
+	text-align:center;
+}
+a {
+	text-decoration:none;
 }
 .card:hover img {
 	opacity:0.2;

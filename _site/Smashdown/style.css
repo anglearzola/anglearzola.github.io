@@ -1,0 +1,36 @@
+body {
+  background-color: gold;
+}
+.smash-card {
+  height:70px;
+  width:50px;
+  position: relative;
+}
+.smash-card>input {
+  height:100%;
+  width:100%;
+  opacity: 0;
+}
+.smash-card>input:checked+img {
+  filter:blur(2px) grayscale(100%);
+  opacity: 0.5;
+}
+.smash-card>img {
+  position: absolute;
+  pointer-events: none;
+  width:50px;
+  height:70px;
+  top:0px;
+  left:0px;
+  transition:filter 0.25s ease;
+}
+.row {
+  display:flex;
+}
+h1 {
+  text-align: center;
+}
+.row {
+  position:relative;
+  left:30%;
+}

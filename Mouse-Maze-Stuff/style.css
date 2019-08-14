@@ -1,0 +1,125 @@
+.boundary {
+	border: 1px solid black;
+  background-color: #eeeeee;
+}
+#boundary1 {
+  height:200px;
+  width:100%;
+}
+#boundary2 {
+  height:200px;
+  width:100%;
+  position:relative;
+  top:300px;
+}
+#boundary3 {
+  height:150px;
+  width:300px;
+  position:relative;
+  bottom:128px;
+  left:700px;
+  transform:rotate(90deg);
+}
+#boundary4 {
+  height:150px;
+  width:725px;
+  position:relative;
+  top:211px;
+  left:700px;
+  transform:rotate(90deg);
+}
+#stairs1 {
+  position:relative;
+  left:1450px;
+  bottom:100px;
+}
+#stairs2 {
+  position:relative;
+  left:1250px;
+  bottom:250px;
+  transform:rotate(180deg);
+}
+#stairs3 {
+  position:relative;
+  left:1250px;
+  top:215px;
+}
+#stairs4 {
+  position:relative;
+  left:1350px;
+  bottom:100px;
+}
+#key {
+  width:50px;
+  height:50px;
+  position:relative;
+  opacity:1;
+}
+#key:hover {
+  opacity:1;
+}
+#lock {
+  width:50px;
+  height:50px;
+  position:relative;
+  left:1250px;
+}
+#circle {
+  width:25px;
+  height:25px;
+  position:relative;
+  top:400px;
+}
+.goomba {
+  width:150px;
+  height:150px;
+  position:relative;
+  bottom:300px;
+}
+#goomba1 {
+  animation-name: goombaMove;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+#goomba2 {
+  position:relative;
+  left:75px;
+  animation-name: goombaMove;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+#goomba3 {
+  position:relative;
+  left:125px;
+  animation-name: goombaMove;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+#goomba4 {
+  position:relative;
+  left:175px;
+  animation-name: goombaMove;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+#goomba5 {
+  position:relative;
+  left:225px;
+  animation-name: goombaMove;
+  animation-duration: 0.00001s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes goombaMove {
+  from {bottom:300px;}
+  to {bottom:0px;} 
+}
+
+
+
+
+
