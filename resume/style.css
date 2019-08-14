@@ -1,0 +1,237 @@
+/* Initial CSS to make things good */
+body {
+	font-family:calibri;
+	background-color:black;
+}
+h1, h2 {
+	text-align:center;
+	color:white;
+	margin:0px;
+}
+h2 {
+	font-size:50px;
+}
+h3 {
+	margin-bottom:0px;
+	margin-top:0px;
+	color:white;
+}
+h3:hover {
+	background-color:grey;
+	font-size:35px;
+}
+img {
+	height:150px;
+}
+.columnflex {
+	display:flex;
+	flex-direction:column;
+	flex-wrap:wrap;
+	text-align:center;
+	align-content:center;
+}
+/* CSS for Buttons */
+button {
+  background-color: #3B5998;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  width:300px;
+  height:100px;
+  margin-top:5px;
+  margin-left:10px;
+  position:relative;
+  left:10%;
+  transition: all .2s ease-in-out;
+}
+button:hover {
+	transform:scale(1.1);
+	background-color:grey;
+}
+.columnflexButtons {
+	display:flex;
+	flex-direction:column;
+	flex-wrap:wrap;
+}
+/*Makes each section div a big rectangle */
+.section {
+	height:750px;
+}
+/* CARDS CSS */
+.card, .card2 {
+  display:inline-block;
+  font-size:17px;
+  width:200px;
+  height:200px;
+  text-align:center;
+  background-color:white;
+  color:white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all .2s ease-in-out;
+  border-radius:10px;
+}
+.card {
+	position:relative;
+	left:60%;
+}
+.card2 {
+	position:relative;
+	left:32%;
+	top:10px;
+}
+.top {
+  background-color:#3498DB;
+}
+.flex-container {
+  display:flex;
+  flex-wrap:wrap;
+}
+.flex-container > div {
+  margin: 10px;
+}
+.card:hover,.card2:hover {
+  transform: scale(1.1);
+}
+.card .top,.card2 .top {
+  color:white;
+}
+.card, .card2 {
+  color:black
+}
+.notSkillCards {
+  display:inline-block;
+  font-size:17px;
+  width:50%;
+  height:20%;
+  background-color:white;
+  color:black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius:10px;
+  margin-top:20px;
+  transition: all .2s ease-in-out;
+}
+.notSkillCards h4 {
+	text-align:center;
+	margin:0px;
+	font-size:30px;
+	background-color:black;
+	color:white;
+}
+.notSkillCards p {
+	padding-left:10px;
+}
+.notSkillCards:hover {
+	transform:scale(1.1);
+}
+hr {
+	margin:0px;
+}
+/* Styling for text inside of headingDiv */
+#logo {
+	position:relative;
+	left:15%;
+	top:40%;
+	width:70%;
+  	margin-top:0px;
+}
+/*Styling for headingDiv */
+#headingDiv {
+	background-image:url('code.jpg');
+	color:white;
+	height:750px;
+	background-size:cover;
+}
+
+/*Experience and Skills stuff */
+#expDiv {
+	display:flex;
+	flex-direction:row;
+	background-image:url('abstract.jpg');
+}
+#expHeading {
+	position:absolute;
+	left:550px;
+}
+#jobsCards, #skillCards {
+	font-size:25px;
+	color:white;
+	text-align:center;
+}
+
+#jobsAndSkillsDiv {
+	position:relative;
+	top:100px;
+	left:125px;
+}
+.skills {
+	background-color:red;
+}
+#badgeWrapper {
+	background-color:white;
+	border-radius:10px;
+	position:relative;
+	left:30%;
+}
+.badge {
+	margin-top:0px;
+}
+/* Education stuff */
+#eduDiv {
+	background-image:url('graduation.jpg');
+	background-size:100%;
+}
+
+/* Club stuff */
+#clubDiv {
+	background-image:url('abstract2.jpg');
+	background-size:cover;
+}
+#clubInfo {
+	width:500px;
+	height:500px;
+	position:relative;
+	left:60%;
+	bottom:70%;
+}
+/* Activities stuff */
+#activitiesDiv {
+	background-image:url('track.jpg');
+	background-size:100%;
+}
+/* Awards stuff */
+#awardsDiv {
+	background-image:url('award.jpg');
+	background-size:cover;
+
+}
+footer {
+	background-color:red;
+	color:white;
+	font-size:25px;
+}
+.arrowDiv {
+  background-color: #3B5998;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size:20px;
+  width:50px;
+  height:50px;
+  margin-top:5px;
+  margin-left:10px;
+  position:relative;
+  transition: all .2s ease-in-out;
+}
+#leftArrowDiv1, #rightArrowDiv1 {
+	left:59.5%;
+	bottom:10px;
+}
+#leftArrowDiv2, #rightArrowDiv2 {
+	left:31.5%;
+	bottom:5px;
+}  
