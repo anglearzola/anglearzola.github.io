@@ -167,6 +167,13 @@ hr {
 .skills {
 	background-color:red;
 }
+#badgeWrapper p {
+	color:black;
+	position:absolute;
+	bottom:75%;
+	left:25%;
+	font-size:30px;
+}
 #badgeWrapper {
 	display:flex;
 	flex-direction:row;
