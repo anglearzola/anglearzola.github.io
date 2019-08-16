@@ -53,6 +53,7 @@ h1 {
   /* margin:10px; */
   /* position:relative; */
   /* left:5%; */
+	width:300px;
 }
 .card:hover {
 	transform:scale(1.1);
