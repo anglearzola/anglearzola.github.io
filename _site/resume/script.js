@@ -72,14 +72,14 @@ let currentSkillIndex = 0
 let currentSkillItem = document.getElementsByClassName('card2')[0]
 let lastSkillItem = false
 const leftArrowFunc2 = () => {
-  if (currentSkillIndex <= 7) {
+  if (currentSkillIndex <= 5) {
     lastSkillItem = false
   }
   if (currentSkillIndex === 0) {
-    currentSkillIndex = 7
+    currentSkillIndex = 5
     document.getElementsByClassName('card2')[0].style.display = 'none'
-    document.getElementsByClassName('card2')[7].style.display = 'inline-block'
-    currentSkillItem = document.getElementsByClassName('card2')[7]
+    document.getElementsByClassName('card2')[5].style.display = 'inline-block'
+    currentSkillItem = document.getElementsByClassName('card2')[5]
     lastSkillItem = true
   }
   if (currentSkillIndex > 0 && lastSkillItem === false) {
@@ -90,17 +90,17 @@ const leftArrowFunc2 = () => {
   }
 }
 const rightArrowFunc2 = () =>  {
-  if (currentSkillIndex <= 7) {
+  if (currentSkillIndex <= 5) {
     lastSkillItem = false
   }
-  if (currentSkillIndex >= 7) {
-    document.getElementsByClassName('card2')[7].style.display = 'none'
+  if (currentSkillIndex >= 5) {
+    document.getElementsByClassName('card2')[5].style.display = 'none'
     document.getElementsByClassName('card2')[0].style.display = 'inline-block'
     currentSkillIndex = 0
     currentSkillItem = document.getElementsByClassName('card2')[0]
     lastSkillItem = true
   }
-  if (currentSkillIndex < 7 && lastSkillItem === false) {
+  if (currentSkillIndex < 5 && lastSkillItem === false) {
     currentSkillItem.style.display = 'none'
     currentSkillIndex = currentSkillIndex + 1
     currentSkillItem = document.getElementsByClassName('card2')[currentSkillIndex]
