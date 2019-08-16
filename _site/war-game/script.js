@@ -19,8 +19,12 @@ const doGame = () => {
 	///testing purposes
 	console.log(number1)
 	console.log(number2)
-
-
+	if (number1 > 14) {
+		number1 = Math.floor(Math.random()*14 + 2)
+	}
+	if (number2 > 14) {
+		number2 = Math.floor(Math.random()*14 + 2)
+	}
 	///Logic for comparing numbers
 
 	///does this twice since 2 items in array
