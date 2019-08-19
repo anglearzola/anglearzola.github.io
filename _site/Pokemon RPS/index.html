@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Pokemon RPS</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="container">
+    <img src="/Pokemon RPS/assets/charmander_icon.png" class="icon fire" onclick="test('Charmander')">
+    <img src="/Pokemon RPS/assets/squirtle_icon.png" class="icon water" onclick="test('Squirtle')">
+    <img src="/Pokemon RPS/assets/bulbasaur_icon.png" class="icon grass" onclick="test('Bulbasaur')">
+  </div>
+  <p id="uChoice">Your Choice:</p>
+  <p id="vChoice">A.I's Choice</p>
+  <p id="winMessage"></p>
+  <div class="flex-container">
+    <div id="playerPoke"></div>
+    <div id="oppPoke"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
