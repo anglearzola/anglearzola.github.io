@@ -1,4 +1,14 @@
 img {
   width:100px;
   height:200px;
+  position:relative;
+  left:40%;
+}
+button {
+  position:relative;
+  left:40%;
+}
+.text {
+  text-align:center;
+  font-size:40px;
 }

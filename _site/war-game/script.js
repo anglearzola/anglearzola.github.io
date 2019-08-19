@@ -40,7 +40,7 @@ const doGame = () => {
 				///does this to each card
 				cards.map(function(index) {
 					///flips cards
-					document.getElementsByClassName('card')[index].style.transform = "rotateY(90deg)"
+					document.getElementsByClassName('cards')[index].style.transform = "rotateY(90deg)"
 					setTimeout(flipCards,250)
 					///testing purposes
 					console.log('doesnt work')
@@ -78,14 +78,14 @@ const doGame = () => {
 		} /// closes the tie if statement
 
 		/// the route for if 1 > 2 or 1 < 2
-		document.getElementsByClassName('card')[index].style.transform = "rotateY(90deg)"
+		document.getElementsByClassName('cards')[index].style.transform = "rotateY(90deg)"
 		setTimeout(flipCards,250)
 		function flipCards() {
 			///so that the random number is represented by the image
 			let number = ('number' + (index+1))
 			//flips card and changes it to front
-			document.getElementsByClassName('card')[index].src = "./hearts/" + eval(number) + ".png"
-			document.getElementsByClassName('card')[index].style.transform = 'rotateY(0deg)'
+			document.getElementsByClassName('cards')[index].src = "./hearts/" + eval(number) + ".png"
+			document.getElementsByClassName('cards')[index].style.transform = 'rotateY(0deg)'
 			///win conditions
 			if (number1 > number2) {
 				document.getElementById('winMessage').innerHTML = 'Player One Wins!'
@@ -96,12 +96,12 @@ const doGame = () => {
 
 			//moves it back to 0deg so you can see the card
 			setTimeout(function() {
-				document.getElementsByClassName('card')[index].style.transform = 'rotateY(90deg)'
+				document.getElementsByClassName('cards')[index].style.transform = 'rotateY(90deg)'
 
 			//changes back to the back side
 			setTimeout(function(){
-				document.getElementsByClassName('card')[index].src = "red_back.png"
-				document.getElementsByClassName('card')[index].style.transform = 'rotateY(0deg)'
+				document.getElementsByClassName('cards')[index].src = "red_back.png"
+				document.getElementsByClassName('cards')[index].style.transform = 'rotateY(0deg)'
 			},250)
 
 			},3000)
