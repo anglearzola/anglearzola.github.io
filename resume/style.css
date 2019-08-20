@@ -251,7 +251,7 @@ footer {
 	bottom:16.1%;
 	left:119%;
 }
-@media all and (max-width: 700px) {
+@media all and (max-width: 500px) {
 	body {
 		background-color:black;
 	}
