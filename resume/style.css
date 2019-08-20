@@ -59,9 +59,10 @@ button:hover {
 /*Makes each section div a big rectangle */
 section {
 	height:750px;
+	width:100%;
 }
 /* CARDS CSS */
-.card, .card2 {
+.jobCard, .skillCard {
   display:inline-block;
   font-size:17px;
   width:320px;
@@ -74,12 +75,12 @@ section {
   border-radius:10px;
 	margin:10px;
 }
-.card {
+.jobCard {
 	position:relative;
 	left:40%;
 	bottom:15%;
 }
-.card2 {
+.skillCard {
 	position:relative;
 	left:50%;
 	bottom:15%;
@@ -94,13 +95,13 @@ section {
 .flex-container > div {
   margin: 10px;
 }
-.card:hover,.card2:hover {
+.jobCard:hover,.skillCard:hover {
   transform: scale(1.1);
 }
-.card .top,.card2 .top {
+.jobCard .top,.skillCard .top {
   color:white;
 }
-.card, .card2 {
+.jobCard, .skillCard {
   color:black
 }
 .notSkillCards {
@@ -189,7 +190,7 @@ hr {
 /* Education stuff */
 #eduDiv {
 	background-image:url('/assets/graduation.jpg');
-	background-size:100%;
+	background-size:cover;
 }
 
 /* Club stuff */
@@ -203,11 +204,28 @@ hr {
 	position:relative;
 	left:60%;
 	bottom:70%;
+	border-style:solid;
+	background-color:white;
+	overflow-y:auto;
+	border-radius:10px;"
+}
+#clubName {
+	text-align:center;
+	font-size:50px;
+	margin:0px;
+}
+#yearsDone {
+	 font-size:40px;
+	 margin:0px;
+}
+#description {
+	font-size:40px;
+	margin:0px;
 }
 /* Activities stuff */
 #activitiesDiv {
 	background-image:url('/assets/track.jpg');
-	background-size:100%;
+	background-size:cover;
 }
 /* Awards stuff */
 #awardsDiv {
@@ -251,8 +269,69 @@ footer {
 	bottom:16.1%;
 	left:119%;
 }
-@media all and (max-width: 500px) {
+@media all and (max-width: 600px) {
+	.badge {
+		position:relative;
+		width:40px;
+		height:40px;
+		top:20px;
+		right:10px;
+	}
+	.jobCard,.skillCard {
+		width:139px;
+		height:300px;
+		left:-34%;
+		font-size:13px;
+	}
+	#badgeWrapper p {
+		font-size:15px;
+	}
+	#expHeading {
+		left:10px
+	}
+	#leftArrowDiv1 {
+		left:-33%;
+		top:150px;
+	}
+	#rightArrowDiv2 {
+		right:0px;
+	}
+	#rightArrowDiv2 {
+		left:20%;
+	}
+	.columnflexButtons {
+		flex-direction:row;
+	}
+	button {
+		width:55px;
+		height:40px;
+		top:400px;
+		left:10px;
+		margin:1px;
+		font-size:10px;
+	}
+	#clubInfo {
+		top:25px;
+		left:0px;
+		width:300px;
+		height:300px;
+	}
+	#clubInfo p {
+		font-size:18px;
+	}
+	#clubInfo h4 {
+		font-size:30px;
+	}
+	.notSkillCards h4 {
+		font-size:15px;
+	}
+	footer {
+		font-size:15px;
+	}
 	body {
-		background-color:black;
+		overflow:auto;
+	}
+	section {
+		width:100vw;
 	}
 }

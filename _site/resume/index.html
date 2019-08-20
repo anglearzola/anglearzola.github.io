@@ -41,10 +41,7 @@
 				<!-- Div is its own thing to be able to move it close to center of page and above the bottom div -->
 			<div id="jobsAndSkillsDiv">
 				<div class="jobGallery">
-					<div id="leftArrowDiv1" class="arrowDiv">
-          				<p class="arrow">&lt;</p>
-        			</div>
-				  <div class="card">
+				  <div class="jobCard">
 				    <header class="top">City of Providence HTML/CSS Summer Job</header>
 				    Position: PVD Elite Coder
 				    <hr>
@@ -52,7 +49,7 @@
 				    <hr>
 				    Description: Worked on how to make websites using HTML and CSS, and other skills that developers would need to know
 				  </div>
-				  <div class="card" style="display:none;">
+				  <div class="jobCard" style="display:none;">
 				    <header class="top">Career Devs</header>
 				    Position: Code Intern
 				    <hr>
@@ -60,7 +57,7 @@
 				    <hr>
 				    Description: Worked on JavaScript and JavaScript algorithms
 				</div>
-				<div class="card" style="display:none;">
+				<div class="jobCard" style="display:none;">
 					<header class="top">Providence Public Library JavaScript Class</header>
 				    Position: Teaching Assistant
 				    <hr>
@@ -68,7 +65,7 @@
 				    <hr>
 				    Description: Helped students that were falling behind instruction/needed help with error in their code
 				</div>
-				<div class="card" style="display:none;">
+				<div class="jobCard" style="display:none;">
 					<header class="top">IntraCity Geeks</header>
 				    Position: Code Intern
 				    <hr>
@@ -76,7 +73,7 @@
 				    <hr>
 				    Description: Reviewed JavaScript, appended form information to Google Sheets, and then appended the information to a SQL database over a local Python server
 				</div>
-				<div class="card" style="display:none;">
+				<div class="jobCard" style="display:none;">
 					<header class="top">St Patrick's Church</header>
 				    Position: Volunteer/Janitor
 				    <hr>
@@ -84,16 +81,10 @@
 				    <hr>
 				    Description: Helped clean the church
 				</div>
-				<div id="rightArrowDiv1" class="arrowDiv">
-         			<p class="arrow">&gt;</p>
-       			</div>
 			</div>
 <!-- Sort through skill cards -->
 				<div class="skillGallery">
-				    <div id="leftArrowDiv2" class="arrowDiv">
-          			<p class="arrow">&lt;</p>
-        		</div>
-					<div class="card2">
+					<div class="skillCard">
 						<header class="top skills">Coding Languages</header>
 						HTML - 1 year of experience
 						<br>
@@ -101,32 +92,29 @@
 						<br>
 						JavaScript - 1 year of experience
 					</div>
-					<div class="card2" style="display:none;">
+					<div class="skillCard" style="display:none;">
 						<header class="top skills">Project</header>
 						<a href="https://repl.it/@angleee/Mouse-Maze-Stuff" target="_blank"><p>Mouse Maze (WIP)</p></a>
 						Description: A project I'm currently working on. You use the mouse to manuver and go to the stairs to go to the next level. When you reach the stairs, go to the red circle to proceed (in order to have mouse placed where you need it). Don't touch the boundaries (grey divs)
 					</div>
-					<div class="card2" style="display:none;">
+					<div class="skillCard" style="display:none;">
 						<header class="top skills">Project</header>
 						<a href="https://repl.it/@angleee/Quiz-On-Replit" target="_blank"><p>Quiz (WIP)</p></a>
 						Description: Based off the Impossible Quiz. You have 3 lives. Work in progress.
 					</div>
-					<div class="card2" style="display:none;">
+					<div class="skillCard" style="display:none;">
 						<header class="top skills">Project</header>
 						<a href="https://repl.it/@angleee/Smashdown-with-function" target="_blank"><p>Smashdown</p></a>
 						Description: A project made for Super Smash Flash 2. Click on the figures to make them fade out.
 					</div>
-					<div class="card2" style="display:none;">
+					<div class="skillCard" style="display:none;">
 						<header class="top skills">Languages</header>
 						I speak English and Spanish
 					</div>
-					<div class="card2" style="display:none;">
+					<div class="skillCard" style="display:none;">
 						<header class="top skills">Typing</header>
 						I type 100+ WPM
 					</div>
-			    <div id="rightArrowDiv2" class="arrowDiv">
-        		<p class="arrow">&gt;</p>
-      		</div>
 				</div>
 			</div>
 	</section>
@@ -158,16 +146,16 @@
 	<section id="clubDiv">
 		<h2>Clubs</h2>
 		<div class="columnflexButtons">
-			<button onclick="chessButton()">Chess Club</button>
-			<button onclick="computerButton()">Computer Club</button>
-			<button onclick="dndButton()">Dungeons and Dragons Club</button>
-			<button onclick="helpingHandsButton()">Helping Hands Club</button>
-			<button onclick="pingPongButton()">Ping Pong Club</button>
+			<button onclick="chessButton()">Chess</button>
+			<button onclick="computerButton()">Computer</button>
+			<button onclick="dndButton()">Dungeons and Dragons</button>
+			<button onclick="helpingHandsButton()">Helping Hands</button>
+			<button onclick="pingPongButton()">Ping Pong</button>
 		</div>
-		<div id="clubInfo" style="border-style:solid;background-color:white;overflow-y:auto;border-radius:10px;">
-			<h4 id="clubName" style="text-align:center;font-size:50px;margin:0px;">Club</h4>
-			<p id="yearsDone" style="font-size:40px;margin:0px;">Years Done:</p>
-			<p id="description" style="font-size:40px;margin:0px;">Description:</p>
+		<div id="clubInfo">
+			<h4 id="clubName">Club</h4>
+			<p id="yearsDone">Years Done:</p>
+			<p id="description">Description:</p>
 		</div>
 	</section>
 

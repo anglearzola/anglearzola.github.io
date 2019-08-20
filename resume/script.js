@@ -29,91 +29,53 @@ function pingPongButton() {
 	document.getElementById('clubName').innerHTML = "Ping Pong Club"
 }
 let currentJobIndex = 0
-let currentJobItem = document.getElementsByClassName('card')[0]
+let currentJobItem = document.getElementsByClassName('jobCard')[0]
 let lastJobItem = false
-const leftArrowFunc1 = () => {
-  if (currentJobIndex <= 4) {
-    lastJobItem = false
-  }
-  if (currentJobIndex === 0) {
-    currentJobIndex = 4
-    document.getElementsByClassName('card')[0].style.display = 'none'
-    document.getElementsByClassName('card')[4].style.display = 'inline-block'
-    currentJobItem = document.getElementsByClassName('card')[4]
-    lastJobItem = true
-  }
-  if (currentJobIndex > 0 && lastJobItem === false) {
-    currentJobItem.style.display = 'none'
-    currentJobIndex = currentJobIndex - 1
-    currentJobItem = document.getElementsByClassName('card')[currentJobIndex]
-    currentJobItem.style.display = 'inline-block'
-  }
-}
-const rightArrowFunc1 = () =>  {
+const jobProgress = () =>  {
   if (currentJobIndex <= 4) {
     lastJobItem = false
   }
   if (currentJobIndex >= 4) {
-    document.getElementsByClassName('card')[4].style.display = 'none'
-    document.getElementsByClassName('card')[0].style.display = 'inline-block'
+    document.getElementsByClassName('jobCard')[4].style.display = 'none'
+    document.getElementsByClassName('jobCard')[0].style.display = 'inline-block'
     currentJobIndex = 0
-    currentJobItem = document.getElementsByClassName('card')[0]
+    currentJobItem = document.getElementsByClassName('jobCard')[0]
     lastJobItem = true
   }
   if (currentJobIndex < 4 && lastJobItem === false) {
     currentJobItem.style.display = 'none'
     currentJobIndex = currentJobIndex + 1
-    currentJobItem = document.getElementsByClassName('card')[currentJobIndex]
+    currentJobItem = document.getElementsByClassName('jobCard')[currentJobIndex]
     currentJobItem.style.display = 'inline-block'
   }
 }
 
 let currentSkillIndex = 0
-let currentSkillItem = document.getElementsByClassName('card2')[0]
+let currentSkillItem = document.getElementsByClassName('skillCard')[0]
 let lastSkillItem = false
-const leftArrowFunc2 = () => {
-  if (currentSkillIndex <= 5) {
-    lastSkillItem = false
-  }
-  if (currentSkillIndex === 0) {
-    currentSkillIndex = 5
-    document.getElementsByClassName('card2')[0].style.display = 'none'
-    document.getElementsByClassName('card2')[5].style.display = 'inline-block'
-    currentSkillItem = document.getElementsByClassName('card2')[5]
-    lastSkillItem = true
-  }
-  if (currentSkillIndex > 0 && lastSkillItem === false) {
-    currentSkillItem.style.display = 'none'
-    currentSkillIndex = currentSkillIndex - 1
-    currentSkillItem = document.getElementsByClassName('card2')[currentSkillIndex]
-    currentSkillItem.style.display = 'inline-block'
-  }
-}
-const rightArrowFunc2 = () =>  {
+const skillProgress = () =>  {
   if (currentSkillIndex <= 5) {
     lastSkillItem = false
   }
   if (currentSkillIndex >= 5) {
-    document.getElementsByClassName('card2')[5].style.display = 'none'
-    document.getElementsByClassName('card2')[0].style.display = 'inline-block'
+    document.getElementsByClassName('skillCard')[5].style.display = 'none'
+    document.getElementsByClassName('skillCard')[0].style.display = 'inline-block'
     currentSkillIndex = 0
-    currentSkillItem = document.getElementsByClassName('card2')[0]
+    currentSkillItem = document.getElementsByClassName('skillCard')[0]
     lastSkillItem = true
   }
   if (currentSkillIndex < 5 && lastSkillItem === false) {
     currentSkillItem.style.display = 'none'
     currentSkillIndex = currentSkillIndex + 1
-    currentSkillItem = document.getElementsByClassName('card2')[currentSkillIndex]
+    currentSkillItem = document.getElementsByClassName('skillCard')[currentSkillIndex]
     currentSkillItem.style.display = 'inline-block'
   }
 }
-document.getElementById('leftArrowDiv1').addEventListener('click',leftArrowFunc1)
-document.getElementById('rightArrowDiv1').addEventListener('click',rightArrowFunc1)
-document.getElementById('leftArrowDiv2').addEventListener('click',leftArrowFunc2)
-document.getElementById('rightArrowDiv2').addEventListener('click',rightArrowFunc2)
-var mq = window.matchMedia('@media all and (max-width: 500px)');
-if(mq.matches) {
-    console.log('hi')
-} else {
-    document.getElementsByTagName('body').innerHTML = 'Get a better screen'
+let jobArr = document.getElementsByClassName('jobCard')
+let skillArr = document.getElementsByClassName('skillCard')
+for (let i = 0; i < jobArr.length;i++) {
+	document.getElementsByClassName('jobCard')[i].addEventListener('click',jobProgress)
+}
+for (i = 0; i < skillArr.length;i++) {
+		document.getElementsByClassName('skillCard')[i].addEventListener('click',skillProgress)
 }
