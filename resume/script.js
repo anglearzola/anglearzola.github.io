@@ -111,3 +111,9 @@ document.getElementById('leftArrowDiv1').addEventListener('click',leftArrowFunc1
 document.getElementById('rightArrowDiv1').addEventListener('click',rightArrowFunc1)
 document.getElementById('leftArrowDiv2').addEventListener('click',leftArrowFunc2)
 document.getElementById('rightArrowDiv2').addEventListener('click',rightArrowFunc2)
+var mq = window.matchMedia('@media all and (max-width: 500px)');
+if(mq.matches) {
+    console.log('hi')
+} else {
+    document.getElementsByTagName('body').innerHTML = 'Get a better screen'
+}
