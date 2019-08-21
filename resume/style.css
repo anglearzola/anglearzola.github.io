@@ -125,6 +125,64 @@ section {
 hr {
 	margin:0px;
 }
+/* Nav*/
+nav {
+	color:white;
+	text-align:center;
+	align-content:center;
+	z-index:100;
+	position:fixed;
+	top:30%;
+}
+a {
+	text-decoration:none;
+}
+nav a {
+	color:white;
+}
+html {
+	scroll-behavior: smooth;
+}
+.nav {
+	border-radius:360px;
+	background-color:grey;
+	width:25px;
+	height:25px;
+	margin:10px;
+	top:50%;
+	z-index:100;
+	transition: all .2s ease-in-out;
+}
+.expIcon {
+	background-image:url('https://cdn3.iconfinder.com/data/icons/computers-programming/512/Laptop_B-256.png');
+	background-size:cover;
+}
+.eduIcon {
+	background-image:url('https://cdn1.iconfinder.com/data/icons/education-learning/128/school-building-128.png');
+	background-size:cover;
+}
+.clubIcon {
+	background-image:url('https://cdn3.iconfinder.com/data/icons/nature-animals/512/Dragon-256.png');
+	background-size:cover;
+}
+.actIcon {
+	background-image:url('https://cdn4.iconfinder.com/data/icons/thin-wellness-spa-beauty/24/thin-1511_sport_running_activity-256.png');
+	background-size:cover;
+}
+.awardsIcon {
+	background-image:url('https://cdn3.iconfinder.com/data/icons/block/32/trophy-256.png');
+	background-size:cover;
+}
+.nav:hover {
+	background-color:white;
+	transform:scale(1.9);
+}
+.columnflexNav {
+	display:flex;
+	flex-direction:column;
+	flex-wrap:wrap;
+}
+
 /* Styling for text inside of headingDiv */
 #logo {
 	position:relative;
@@ -227,40 +285,10 @@ hr {
 
 }
 footer {
-	background-color:red;
+	background: rgb(131,58,180);
+	background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
 	color:white;
 	font-size:25px;
-}
-.arrowDiv {
-  background-color: #3B5998;
-  border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size:20px;
-  width:50px;
-  height:50px;
-  margin-top:5px;
-  margin-left:10px;
-  position:relative;
-  transition: all .2s ease-in-out;
-}
-#leftArrowDiv1 {
-	top:25%;
-	left:45%;
-}
-#rightArrowDiv1 {
-	bottom:16.1%;
-	left:108%;
-}
-#leftArrowDiv2 {
-	top:25%;
-	left:56%;
-}
-#rightArrowDiv2 {
-	bottom:16.1%;
-	left:119%;
 }
 @media all and (max-width: 600px) {
 	.badge {
@@ -273,7 +301,7 @@ footer {
 	.jobCard,.skillCard {
 		width:139px;
 		height:300px;
-		left:-34%;
+		left:-13%;
 		font-size:13px;
 	}
 	#badgeWrapper p {
@@ -281,16 +309,6 @@ footer {
 	}
 	#expHeading {
 		left:10px
-	}
-	#leftArrowDiv1 {
-		left:-33%;
-		top:150px;
-	}
-	#rightArrowDiv2 {
-		right:0px;
-	}
-	#rightArrowDiv2 {
-		left:20%;
 	}
 	.columnflexButtons {
 		flex-direction:row;
@@ -326,5 +344,11 @@ footer {
 	}
 	section {
 		width:100vw;
+	}
+	nav {
+		display:none;
+	}
+	i {
+		background-color:white;
 	}
 }

@@ -11,6 +11,16 @@
 	<link rel="icon" type="image/png" href="/assets/favicon.png">
 </head>
 <body>
+	<!-- Nav bar -->
+	<nav>
+		<div class="columnflexNav">
+		  <a href="#expDiv"><div class="nav expIcon"></div></a>
+		  <a href="#eduDiv"><div class="nav eduIcon"></div></a>
+		  <a href="#clubDiv"><div class="nav clubIcon"></div></a>
+		  <a href="#activitiesDiv"><div class="nav actIcon"></div></a>
+		  <a href="#awardsDiv"><div class="nav awardsIcon"></div></a>
+		</div>
+	</nav>
 	<!-- Heading with code background and name -->
 	<section id="headingDiv">
 		<img id="logo" src="/assets/logo.png" alt="no image no site">
@@ -40,7 +50,6 @@
 				</div>
 				<!-- Div is its own thing to be able to move it close to center of page and above the bottom div -->
 			<div id="jobsAndSkillsDiv">
-				<div class="jobGallery">
 				  <div class="jobCard">
 				    <header class="top">City of Providence HTML/CSS Summer Job</header>
 				    Position: PVD Elite Coder
@@ -48,7 +57,10 @@
 				    Date: (8/5/2019-8/26/2019)
 				    <hr>
 				    Description: Worked on how to make websites using HTML and CSS, and other skills that developers would need to know
+						<br>
+						<strong><p>CLICK THIS CARD<p></strong>
 				  </div>
+					<!-- Inline CSS is used in conjunction with the JS -->
 				  <div class="jobCard" style="display:none;">
 				    <header class="top">Career Devs</header>
 				    Position: Code Intern
@@ -81,40 +93,39 @@
 				    <hr>
 				    Description: Helped clean the church
 				</div>
-			</div>
 <!-- Sort through skill cards -->
-				<div class="skillGallery">
-					<div class="skillCard">
-						<header class="top skills">Coding Languages</header>
-						HTML - 1 year of experience
-						<br>
-						CSS - 1 year of experience
-						<br>
-						JavaScript - 1 year of experience
-					</div>
-					<div class="skillCard" style="display:none;">
-						<header class="top skills">Project</header>
-						<a href="https://repl.it/@angleee/Mouse-Maze-Stuff" target="_blank"><p>Mouse Maze (WIP)</p></a>
-						Description: A project I'm currently working on. You use the mouse to manuver and go to the stairs to go to the next level. When you reach the stairs, go to the red circle to proceed (in order to have mouse placed where you need it). Don't touch the boundaries (grey divs)
-					</div>
-					<div class="skillCard" style="display:none;">
-						<header class="top skills">Project</header>
-						<a href="https://repl.it/@angleee/Quiz-On-Replit" target="_blank"><p>Quiz (WIP)</p></a>
-						Description: Based off the Impossible Quiz. You have 3 lives. Work in progress.
-					</div>
-					<div class="skillCard" style="display:none;">
-						<header class="top skills">Project</header>
-						<a href="https://repl.it/@angleee/Smashdown-with-function" target="_blank"><p>Smashdown</p></a>
-						Description: A project made for Super Smash Flash 2. Click on the figures to make them fade out.
-					</div>
-					<div class="skillCard" style="display:none;">
-						<header class="top skills">Languages</header>
-						I speak English and Spanish
-					</div>
-					<div class="skillCard" style="display:none;">
-						<header class="top skills">Typing</header>
-						I type 100+ WPM
-					</div>
+				<div class="skillCard">
+					<header class="top skills">Coding Languages</header>
+					HTML - 1 year of experience
+					<br>
+					CSS - 1 year of experience
+					<br>
+					JavaScript - 1 year of experience
+					<br>
+					<strong><p>CLICK THIS CARD<p></strong>
+				</div>
+				<div class="skillCard" style="display:none;">
+					<header class="top skills">Project</header>
+					<a href="https://repl.it/@angleee/Mouse-Maze-Stuff" target="_blank"><p>Mouse Maze (WIP)</p></a>
+					Description: A project I'm currently working on. You use the mouse to manuver and go to the stairs to go to the next level. When you reach the stairs, go to the red circle to proceed (in order to have mouse placed where you need it). Don't touch the boundaries (grey divs)
+				</div>
+				<div class="skillCard" style="display:none;">
+					<header class="top skills">Project</header>
+					<a href="https://repl.it/@angleee/Quiz-On-Replit" target="_blank"><p>Quiz (WIP)</p></a>
+					Description: Based off the Impossible Quiz. You have 3 lives. Work in progress.
+				</div>
+				<div class="skillCard" style="display:none;">
+					<header class="top skills">Project</header>
+					<a href="https://repl.it/@angleee/Smashdown-with-function" target="_blank"><p>Smashdown</p></a>
+					Description: A project made for Super Smash Flash 2. Click on the figures to make them fade out.
+				</div>
+				<div class="skillCard" style="display:none;">
+					<header class="top skills">Languages</header>
+					I speak English and Spanish
+				</div>
+				<div class="skillCard" style="display:none;">
+					<header class="top skills">Typing</header>
+					I type 100+ WPM
 				</div>
 			</div>
 	</section>
