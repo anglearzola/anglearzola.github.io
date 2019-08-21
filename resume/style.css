@@ -74,16 +74,9 @@ section {
   transition: all .2s ease-in-out;
   border-radius:10px;
 	margin:10px;
-}
-.jobCard {
 	position:relative;
-	left:40%;
-	bottom:15%;
-}
-.skillCard {
-	position:relative;
-	left:50%;
-	bottom:15%;
+	top:-10%;
+	left:180px;
 }
 .top {
   background-color:#3498DB;
