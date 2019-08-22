@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{{page.title}}</title>
+    <link rel="stylesheet" href="/blog.css">
+  </head>
+  <body>
+    <h1 id="page-title">{{page.title}}</h1>
+    <p class="date">{{page.date | date: '%b %-d, %Y'}}</p>
+    {{content}}
+  </body>
+</html>

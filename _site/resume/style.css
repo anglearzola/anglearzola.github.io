@@ -1,35 +1,35 @@
 /* Initial CSS to make things good */
 body {
-	font-family:calibri;
-	background-color:black;
-}
+  font-family: calibri;
+  background-color: black; }
+
 h1, h2 {
-	text-align:center;
-	color:white;
-	margin:0px;
-}
+  text-align: center;
+  color: white;
+  margin: 0px; }
+
 h2 {
-	font-size:50px;
-}
+  font-size: 50px; }
+
 h3 {
-	margin-bottom:0px;
-	margin-top:0px;
-	color:white;
-}
+  margin-bottom: 0px;
+  margin-top: 0px;
+  color: white; }
+
 h3:hover {
-	background-color:grey;
-	font-size:35px;
-}
+  background-color: grey;
+  font-size: 35px; }
+
 img {
-	height:150px;
-}
+  height: 150px; }
+
 .columnflex {
-	display:flex;
-	flex-direction:column;
-	flex-wrap:wrap;
-	text-align:center;
-	align-content:center;
-}
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  align-content: center; }
+
 /* CSS for Buttons */
 button {
   background-color: #3B5998;
@@ -39,316 +39,310 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 20px;
-  width:300px;
-  height:100px;
-  margin-top:5px;
-  margin-left:10px;
-  position:relative;
-  left:10%;
-  transition: all .2s ease-in-out;
-}
+  width: 300px;
+  height: 100px;
+  margin-top: 5px;
+  margin-left: 10px;
+  position: relative;
+  left: 10%;
+  transition: all .2s ease-in-out; }
+
 button:hover {
-	transform:scale(1.1);
-	background-color:grey;
-}
+  transform: scale(1.1);
+  background-color: grey; }
+
 .columnflexButtons {
-	display:flex;
-	flex-direction:column;
-	flex-wrap:wrap;
-}
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; }
+
 /*Makes each section div a big rectangle */
 section {
-	height:750px;
-	width:100%;
-}
+  height: 750px;
+  width: 100%; }
+
 /* CARDS CSS */
 .jobCard, .skillCard {
-  display:inline-block;
-  font-size:17px;
-  width:320px;
-  height:230px;
-  text-align:center;
-  background-color:white;
-  color:white;
+  display: inline-block;
+  font-size: 17px;
+  width: 320px;
+  height: 230px;
+  text-align: center;
+  background-color: white;
+  color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: all .2s ease-in-out;
-  border-radius:10px;
-	margin:10px;
-	position:relative;
-	top:-10%;
-	left:180px;
-}
-.top {
-  background-color:#3498DB;
-}
-.flex-container {
-  display:flex;
-  flex-wrap:wrap;
-}
-.flex-container > div {
+  border-radius: 10px;
   margin: 10px;
-}
-.jobCard:hover,.skillCard:hover {
-  transform: scale(1.1);
-}
-.jobCard .top,.skillCard .top {
-  color:white;
-}
+  position: relative;
+  top: -10%;
+  left: 180px; }
+
+.top {
+  background-color: #3498DB; }
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap; }
+
+.flex-container > div {
+  margin: 10px; }
+
+.jobCard:hover, .skillCard:hover {
+  transform: scale(1.1); }
+
+.jobCard .top, .skillCard .top {
+  color: white; }
+
 .jobCard, .skillCard {
-  color:black
-}
+  color: black; }
+
 .notSkillCards {
-  display:inline-block;
-  font-size:17px;
-  width:50%;
-  height:20%;
-  background-color:white;
-  color:black;
+  display: inline-block;
+  font-size: 17px;
+  width: 50%;
+  height: 20%;
+  background-color: white;
+  color: black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius:10px;
-  margin-top:20px;
-  transition: all .2s ease-in-out;
-}
+  border-radius: 10px;
+  margin-top: 20px;
+  transition: all .2s ease-in-out; }
+
 .notSkillCards h4 {
-	text-align:center;
-	margin:0px;
-	font-size:30px;
-	background-color:black;
-	color:white;
-}
+  text-align: center;
+  margin: 0px;
+  font-size: 30px;
+  background-color: black;
+  color: white; }
+
 .notSkillCards p {
-	padding-left:10px;
-}
+  padding-left: 10px; }
+
 .notSkillCards:hover {
-	transform:scale(1.1);
-}
+  transform: scale(1.1); }
+
 hr {
-	margin:0px;
-}
+  margin: 0px; }
+
 /* Nav*/
 nav {
-	color:white;
-	text-align:center;
-	align-content:center;
-	z-index:100;
-	position:fixed;
-	top:30%;
-}
+  color: white;
+  text-align: center;
+  align-content: center;
+  z-index: 100;
+  position: fixed;
+  top: 30%; }
+
 a {
-	text-decoration:none;
-}
+  text-decoration: none; }
+
 nav a {
-	color:white;
-}
+  color: white; }
+
 html {
-	scroll-behavior: smooth;
-}
+  scroll-behavior: smooth; }
+
 .nav {
-	border-radius:360px;
-	background-color:grey;
-	width:25px;
-	height:25px;
-	margin:10px;
-	top:50%;
-	z-index:100;
-	transition: all .2s ease-in-out;
-}
+  border-radius: 360px;
+  background-color: grey;
+  width: 25px;
+  height: 25px;
+  margin: 10px;
+  top: 50%;
+  z-index: 100;
+  transition: all .2s ease-in-out; }
+
 .expIcon {
-	background-image:url('https://cdn3.iconfinder.com/data/icons/computers-programming/512/Laptop_B-256.png');
-	background-size:cover;
-}
+  background-image: url("https://cdn3.iconfinder.com/data/icons/computers-programming/512/Laptop_B-256.png");
+  background-size: cover; }
+
 .eduIcon {
-	background-image:url('https://cdn1.iconfinder.com/data/icons/education-learning/128/school-building-128.png');
-	background-size:cover;
-}
+  background-image: url("https://cdn1.iconfinder.com/data/icons/education-learning/128/school-building-128.png");
+  background-size: cover; }
+
 .clubIcon {
-	background-image:url('https://cdn3.iconfinder.com/data/icons/nature-animals/512/Dragon-256.png');
-	background-size:cover;
-}
+  background-image: url("https://cdn3.iconfinder.com/data/icons/nature-animals/512/Dragon-256.png");
+  background-size: cover; }
+
 .actIcon {
-	background-image:url('https://cdn4.iconfinder.com/data/icons/thin-wellness-spa-beauty/24/thin-1511_sport_running_activity-256.png');
-	background-size:cover;
-}
+  background-image: url("https://cdn4.iconfinder.com/data/icons/thin-wellness-spa-beauty/24/thin-1511_sport_running_activity-256.png");
+  background-size: cover; }
+
 .awardsIcon {
-	background-image:url('https://cdn3.iconfinder.com/data/icons/block/32/trophy-256.png');
-	background-size:cover;
-}
+  background-image: url("https://cdn3.iconfinder.com/data/icons/block/32/trophy-256.png");
+  background-size: cover; }
+
 .nav:hover {
-	background-color:white;
-	transform:scale(1.9);
-}
+  background-color: white;
+  transform: scale(1.9); }
+
 .columnflexNav {
-	display:flex;
-	flex-direction:column;
-	flex-wrap:wrap;
-}
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; }
 
 /* Styling for text inside of headingDiv */
 #logo {
-	position:relative;
-	left:15%;
-	top:40%;
-	width:70%;
-  	margin-top:0px;
-}
+  position: relative;
+  left: 15%;
+  top: 40%;
+  width: 70%;
+  margin-top: 0px; }
+
 /*Styling for headingDiv */
 #headingDiv {
-	background-image:url('/assets/code.jpg');
-	color:white;
-	height:750px;
-	background-size:cover;
-}
+  background-image: url("/assets/code.jpg");
+  color: white;
+  height: 750px;
+  background-size: cover; }
 
 /*Experience and Skills stuff */
 #expDiv {
-	display:flex;
-	flex-direction:row;
-	background-image:url('/assets/abstract.jpg');
-}
+  display: flex;
+  flex-direction: row;
+  background-image: url("/assets/abstract.jpg"); }
+
 #expHeading {
-	position:absolute;
-	left:550px;
-}
+  position: absolute;
+  left: 550px; }
+
 #jobsAndSkillsDiv {
-	display:flex;
-	flex-direction:row;
-	position:relative;
-	top:50%;
-	right:35%;
-}
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 50%;
+  right: 35%; }
+
 .skills {
-	background-color:red;
-}
+  background-color: red; }
+
 #badgeWrapper p {
-	color:black;
-	position:absolute;
-	bottom:75%;
-	left:25%;
-	font-size:30px;
-}
+  color: black;
+  position: absolute;
+  bottom: 75%;
+  left: 25%;
+  font-size: 30px; }
+
 #badgeWrapper {
-	display:flex;
-	flex-direction:row;
-	position:relative;
-	left:25%;
-	top:20%;
-	width:50%;
-	height:10%
-}
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 25%;
+  top: 20%;
+  width: 50%;
+  height: 10%; }
+
 .badge {
-	margin-top:0px;
-}
+  margin-top: 0px; }
+
 /* Education stuff */
 #eduDiv {
-	background-image:url('/assets/graduation.jpg');
-	background-size:cover;
-}
+  background-image: url("/assets/graduation.jpg");
+  background-size: cover; }
 
 /* Club stuff */
 #clubDiv {
-	background-image:url('/assets/abstract2.jpg');
-	background-size:cover;
-}
+  background-image: url("/assets/abstract2.jpg");
+  background-size: cover; }
+
 #clubInfo {
-	width:500px;
-	height:500px;
-	position:relative;
-	left:60%;
-	bottom:70%;
-	border-style:solid;
-	background-color:white;
-	overflow-y:auto;
-	border-radius:10px;"
-}
+  width: 500px;
+  height: 500px;
+  position: relative;
+  left: 60%;
+  bottom: 70%;
+  border-style: solid;
+  background-color: white;
+  overflow-y: auto;
+  border-radius: 10px; }
+
 #clubName {
-	text-align:center;
-	font-size:50px;
-	margin:0px;
-}
+  text-align: center;
+  font-size: 50px;
+  margin: 0px; }
+
 #yearsDone {
-	 font-size:40px;
-	 margin:0px;
-}
+  font-size: 40px;
+  margin: 0px; }
+
 #description {
-	font-size:40px;
-	margin:0px;
-}
+  font-size: 40px;
+  margin: 0px; }
+
 /* Activities stuff */
 #activitiesDiv {
-	background-image:url('/assets/track.jpg');
-	background-size:cover;
-}
+  background-image: url("/assets/track.jpg");
+  background-size: cover; }
+
 /* Awards stuff */
 #awardsDiv {
-	background-image:url('/assets/award.jpg');
-	background-size:cover;
+  background-image: url("/assets/award.jpg");
+  background-size: cover; }
 
-}
 footer {
-	background: rgb(131,58,180);
-	background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-	color:white;
-	font-size:25px;
-}
+  background: #833ab4;
+  background: linear-gradient(90deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+  color: white;
+  font-size: 25px; }
+
 @media all and (max-width: 600px) {
-	.badge {
-		position:relative;
-		width:40px;
-		height:40px;
-		top:20px;
-		right:10px;
-	}
-	.jobCard,.skillCard {
-		width:139px;
-		height:300px;
-		left:-13%;
-		font-size:13px;
-	}
-	#badgeWrapper p {
-		font-size:15px;
-	}
-	#expHeading {
-		left:10px
-	}
-	.columnflexButtons {
-		flex-direction:row;
-	}
-	button {
-		width:55px;
-		height:40px;
-		top:400px;
-		left:10px;
-		margin:1px;
-		font-size:10px;
-	}
-	#clubInfo {
-		top:25px;
-		left:0px;
-		width:300px;
-		height:300px;
-	}
-	#clubInfo p {
-		font-size:18px;
-	}
-	#clubInfo h4 {
-		font-size:30px;
-	}
-	.notSkillCards h4 {
-		font-size:15px;
-	}
-	footer {
-		font-size:15px;
-	}
-	body {
-		overflow:auto;
-	}
-	section {
-		width:100vw;
-	}
-	nav {
-		display:none;
-	}
-	i {
-		background-color:white;
-	}
-}
+  .badge {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    top: 20px;
+    right: 10px; }
+
+  .jobCard, .skillCard {
+    width: 139px;
+    height: 300px;
+    left: -13%;
+    font-size: 13px; }
+
+  #badgeWrapper p {
+    font-size: 15px; }
+
+  #expHeading {
+    left: 10px; }
+
+  .columnflexButtons {
+    flex-direction: row; }
+
+  button {
+    width: 55px;
+    height: 40px;
+    top: 400px;
+    left: 10px;
+    margin: 1px;
+    font-size: 10px; }
+
+  #clubInfo {
+    top: 25px;
+    left: 0px;
+    width: 300px;
+    height: 300px; }
+
+  #clubInfo p {
+    font-size: 18px; }
+
+  #clubInfo h4 {
+    font-size: 30px; }
+
+  .notSkillCards h4 {
+    font-size: 15px; }
+
+  footer {
+    font-size: 15px; }
+
+  body {
+    overflow: auto; }
+
+  section {
+    width: 100vw; }
+
+  nav {
+    display: none; }
+
+  i {
+    background-color: white; } }
