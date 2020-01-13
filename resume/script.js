@@ -54,17 +54,17 @@ let currentSkillIndex = 0
 let currentSkillItem = document.getElementsByClassName('skillCard')[0]
 let lastSkillItem = false
 const skillProgress = () =>  {
-  if (currentSkillIndex <= 5) {
+  if (currentSkillIndex <= 4) {
     lastSkillItem = false
   }
-  if (currentSkillIndex >= 5) {
-    document.getElementsByClassName('skillCard')[5].style.display = 'none'
+  if (currentSkillIndex >= 4) {
+    document.getElementsByClassName('skillCard')[4].style.display = 'none'
     document.getElementsByClassName('skillCard')[0].style.display = 'inline-block'
     currentSkillIndex = 0
     currentSkillItem = document.getElementsByClassName('skillCard')[0]
     lastSkillItem = true
   }
-  if (currentSkillIndex < 5 && lastSkillItem === false) {
+  if (currentSkillIndex < 4 && lastSkillItem === false) {
     currentSkillItem.style.display = 'none'
     currentSkillIndex = currentSkillIndex + 1
     currentSkillItem = document.getElementsByClassName('skillCard')[currentSkillIndex]
