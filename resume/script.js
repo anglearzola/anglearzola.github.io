@@ -11,7 +11,7 @@ function computerButton() {
 	document.getElementById('clubName').innerHTML = "Computer Club"
 }
 function dndButton() {
-	document.getElementById('yearsDone').innerHTML = "Years Done:" + " Freshman Year + Sophomore Year"
+	document.getElementById('yearsDone').innerHTML = "Years Done:" + " Sophomore Year"
 	document.getElementById('description').innerHTML = "Description:" + " I was one of the people who started Dungeons and Dragons club by approaching teachers to host us. We played games of D&D and formed a D&D community at school by making people interested in it"
 	document.getElementById('clubDiv').style.backgroundImage = "url(/assets/dnd1.jpg)"
 	document.getElementById('clubName').innerHTML = "Dungeons and Dragons Club"
