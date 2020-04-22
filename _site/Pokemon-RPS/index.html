@@ -7,10 +7,21 @@
 </head>
 <body>
   <div class="container">
-    <img src="/Pokemon-RPS/assets/charmander_icon.png" class="icon fire" onclick="test('Charmander')">
-    <img src="/Pokemon-RPS/assets/squirtle_icon.png" class="icon water" onclick="test('Squirtle')">
-    <img src="/Pokemon-RPS/assets/bulbasaur_icon.png" class="icon grass" onclick="test('Bulbasaur')">
+    <img src="/Pokemon-RPS/assets/charmander_icon.png" class="icon fire" onclick="runGame('Charmander','fire')">
+    <img src="/Pokemon-RPS/assets/squirtle_icon.png" class="icon water" onclick="runGame('Squirtle','water')">
+    <img src="/Pokemon-RPS/assets/bulbasaur_icon.png" class="icon grass" onclick="runGame('Bulbasaur','grass')">
   </div>
+	<div class="container">
+		<div id="fireExpBar" class="expBar">
+			<div class="experience"></div>
+		</div>
+		<div id="waterExpBar" class="expBar">
+			<div class="experience"></div>
+		</div>
+		<div id="grassExpBar" class="expBar">
+			<div class="experience"></div>
+		</div>
+	</div>
   <p id="uChoice">Your Choice:</p>
   <p id="vChoice">A.I's Choice</p>
   <p id="winMessage"></p>
