@@ -14,7 +14,7 @@ function test(yourChoice) {
     document.getElementById('uChoice').style.color = 'green'
     document.getElementsByTagName('body')[0].style.backgroundColor = 'darkgreen'
   }
-  document.getElementById('playerPoke').innerHTML = "<img src='" + "/Pokemon RPS/assets/" + yourChoice + ".gif' class='model'>"
+  document.getElementById('playerPoke').innerHTML = "<img src='" + "/Pokemon-RPS/assets/" + yourChoice + ".gif' class='model'>"
   document.getElementById('uChoice').innerHTML = "Your Choice: " + yourChoice
   switch (randomNumber) {
     case 0:
@@ -29,7 +29,7 @@ function test(yourChoice) {
       oppChoice = 'Bulbasaur'
       document.getElementById('vChoice').style.color = 'green'
   }
-  document.getElementById('oppPoke').innerHTML = "<img src='" + "/Pokemon RPS/assets/" + oppChoice + ".gif' class='model'>"
+  document.getElementById('oppPoke').innerHTML = "<img src='" + "/Pokemon-RPS/assets/" + oppChoice + ".gif' class='model'>"
   document.getElementById("vChoice").innerHTML = "A.I's Choice: " + oppChoice
   if (yourChoice === 'Charmander' && oppChoice === 'Squirtle') {
     victory = false
