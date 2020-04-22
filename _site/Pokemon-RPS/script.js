@@ -109,7 +109,7 @@ function runGame(yourChoice,yourElement) {
   else if (yourElement === 'grass' && oppChoice === 'Squirtle') {
     victory = true
   }
-  else if (yourElement === oppChoice) {
+  else {
     victory = 'tie'
   }
   //Does win message
